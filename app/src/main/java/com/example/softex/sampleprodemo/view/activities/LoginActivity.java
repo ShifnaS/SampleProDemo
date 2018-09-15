@@ -1,4 +1,4 @@
-package com.example.softex.sampleprodemo.activities;
+package com.example.softex.sampleprodemo.view.activities;
 
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
@@ -15,6 +15,7 @@ public class LoginActivity extends AppCompatActivity {
 
     private LoginViewModel loginViewModel;
     private ActivityLoginBinding activityMainBinding;
+
 
 
     @Override

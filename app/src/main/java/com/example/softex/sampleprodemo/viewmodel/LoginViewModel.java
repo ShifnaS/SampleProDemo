@@ -6,7 +6,7 @@ import android.widget.Toast;
 
 import com.example.softex.sampleprodemo.api.APIService;
 import com.example.softex.sampleprodemo.model.Results;
-import com.example.softex.sampleprodemo.model.RetroClass;
+import com.example.softex.sampleprodemo.api.ApiModule;
 
 import java.util.Observable;
 
@@ -33,7 +33,7 @@ public class LoginViewModel extends Observable {
     public void sendLoginRequest(String name , String pass)
     {
 
-        APIService apiService = RetroClass.getAPIService();
+        APIService apiService = ApiModule.getAPIService();
         Call<Results> loginresponse = apiService.userlogincall(name,pass);
         loginresponse.enqueue(new Callback<Results>() {
             @Override

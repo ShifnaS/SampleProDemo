@@ -1,4 +1,4 @@
-package com.example.softex.sampleprodemo.activities;
+package com.example.softex.sampleprodemo.view.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
